@@ -9,7 +9,7 @@ public class InsurantSteps {
 
 	@When("^fill in the Insurant Data fields (.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*) and (.*)$")
 	public void fill_in_the_insurant_data_fields(String firstName, String lastName, String dateBirth, String gender,
-			String streetAdress, int country, String zipCode, String city, int occupation, String hobbies,
+			String streetAdress, String country, String zipCode, String city, String occupation, String hobbies,
 			String website) {
 		pgInsurencePage.fillUpInsurantData(firstName, lastName, dateBirth, gender, streetAdress, country, zipCode, city,
 				occupation, hobbies, website);

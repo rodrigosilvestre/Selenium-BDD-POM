@@ -15,9 +15,9 @@ public class VehicleSteps extends DriverConfigurantion {
 	}
 
 	@When("^fill in the Vehicle Data fields (.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*) and (.*)$")
-	public void fill_in_the_vehicle_data_fields(int makeOption, int model, String cylinderCapacity,
-			String enginePerformace, String dateManufacture, int seatsOption, String righthand,
-			int numberSeatsMotorcycle, int fuelTypeOption, String payload, String totalWeight, String listPrice,
+	public void fill_in_the_vehicle_data_fields(String makeOption, String model, String cylinderCapacity,
+			String enginePerformace, String dateManufacture, String seatsOption, String righthand,
+			String numberSeatsMotorcycle, String fuelTypeOption, String payload, String totalWeight, String listPrice,
 			String licePlateNum, String annMiliage) {
 
 		pgVehiclePage.fillUpVehicleData(makeOption, model, cylinderCapacity, enginePerformace, dateManufacture,

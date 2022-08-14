@@ -30,8 +30,8 @@ Feature: Tests of Automobile Insurance functionality
     And proceed to the Insurant tab
     
   Examples:
-    |Make|Model|Cylinder Capacity|Engine Performance|Date of Manufacture|Number of Seats|Right Hand Drive |Number Seats Motorcycle|Fuel Type|Payload|Total Weight|List Price |License Plate Number|Annual Mileage|
-    |3   |5		 |100							 |1000							|08/12/2000   			|3 							|righthanddriveyes|3   					 				  |3		    |100		|120				 |35000	     |Acc3n7ure					  |3000		 			 |
+    |Make|Model			|Cylinder Capacity|Engine Performance|Date of Manufacture|Number of Seats|Right Hand Drive|Number Seats Motorcycle|Fuel Type|Payload|Total Weight|List Price |License Plate Number|Annual Mileage|
+    |BMW |Motorcycle|100							|1000							 |08/12/2000   			 |2 						 |Yes							|2   					 				  |Gas	    |100		|120				 |35000	     |Acc3n7ure					  |3000		 			 |
     
   @insurantDataTest
   Scenario Outline: Enter Insurant Data
@@ -41,8 +41,8 @@ Feature: Tests of Automobile Insurance functionality
     And proceed to the Product tab
     
   Examples:
-    |First Name|Last Name|Date of Birth|Gender			|Street Address		 |Country|Zip Code|City						 |Occupation|Hobbies  |Website			|picture															 	 	  |
-    |Rodrigo   |Silvestre|08/12/1999   |gendermale  |Afonso Pena Street|32		 |42703390|Lauro de Freitas|2				  |skydiving|accenture.com|.src\\test\\resources\\files\\FotoMinha.jpg|
+    |First Name|Last Name|Date of Birth|Gender|Street Address		 |Country|Zip Code|City						 |Occupation|Hobbies  |Website			|picture															 	 	  |
+    |Rodrigo   |Silvestre|08/12/1999   |Male  |Afonso Pena Street|Brazil |42703390|Lauro de Freitas|Employee  |skydiving|accenture.com|.src\\test\\resources\\files\\FotoMinha.jpg|
      
     
   @productDataTest  

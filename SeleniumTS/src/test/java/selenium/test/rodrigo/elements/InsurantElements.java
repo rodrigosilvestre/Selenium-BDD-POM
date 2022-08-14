@@ -18,16 +18,20 @@ public class InsurantElements {
 		return driver.findElement(By.id("birthdate"));
 	}
 
+	public WebElement fieldRightHandDrive(WebDriver driver, String rightHandDrive) {
+		return driver.findElement(By.cssSelector("input[id*='righthanddrive'][value= \"" + rightHandDrive + "\"]"));
+	}
+
 	public WebElement fieldGender(WebDriver driver, String gender) {
-		return driver.findElement(By.id("gendermale"));
+		return driver.findElement(By.cssSelector("input[id*='gendermale'][value= \"" + gender + "\"]"));
 	}
 
 	public WebElement fieldStreetAddress(WebDriver driver) {
 		return driver.findElement(By.id("streetaddress"));
 	}
 
-	public WebElement fieldCountry(WebDriver driver, int i) {
-		return driver.findElement(By.cssSelector("#country option:nth-child(" + i + ")"));
+	public WebElement fieldCountry(WebDriver driver, String country) {
+		return driver.findElement(By.cssSelector("select#country> option[value =\"" + country + "\"]"));
 	}
 
 	public WebElement fieldZipCode(WebDriver driver) {
@@ -38,8 +42,8 @@ public class InsurantElements {
 		return driver.findElement(By.id("city"));
 	}
 
-	public WebElement fieldOccupation(WebDriver driver, int i) {
-		return driver.findElement(By.cssSelector("#occupation option:nth-child(" + i + ")"));
+	public WebElement fieldOccupation(WebDriver driver, String occupation) {
+		return driver.findElement(By.cssSelector("select#occupation> option[value =\"" + occupation + "\"]"));
 	}
 
 	public WebElement fieldHobbies(WebDriver driver, String hobbies) {

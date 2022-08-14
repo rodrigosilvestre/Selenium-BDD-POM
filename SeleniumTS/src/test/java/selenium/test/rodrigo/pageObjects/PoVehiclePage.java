@@ -17,9 +17,10 @@ public class PoVehiclePage extends DriverConfigurantion {
 		DriverConfigurantion.open("http://sampleapp.tricentis.com/101/app.php");
 	}
 
-	public void fillUpVehicleData(int makeOption, int model, String cylinderCapacity, String enginePerformace,
-			String dateManufacture, int seatsOption, String righthand, int numberSeatsMotorcycle, int fuelTypeOption,
-			String payload, String totalWeight, String listPrice, String licePlateNum, String annMiliage) {
+	public void fillUpVehicleData(String makeOption, String model, String cylinderCapacity, String enginePerformace,
+			String dateManufacture, String seatsOption, String righthand, String numberSeatsMotorcycle,
+			String fuelTypeOption, String payload, String totalWeight, String listPrice, String licePlateNum,
+			String annMiliage) {
 		Actions actions = new Actions(driver);
 		vehicleElements.fieldMake(driver, makeOption).click();
 		vehicleElements.fieldModel(driver, model).click();
@@ -43,6 +44,7 @@ public class PoVehiclePage extends DriverConfigurantion {
 	}
 
 	public void nextTab() {
+		wait(2);
 		vehicleElements.fieldNextTab(driver).click();
 	}
 

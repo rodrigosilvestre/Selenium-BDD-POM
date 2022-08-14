@@ -11,11 +11,10 @@ public class PoInsurencePage extends DriverConfigurantion {
 	InsurantElements insurantElements = new InsurantElements();
 
 	public void fillUpInsurantData(String firstName, String lastName, String dateBirth, String gender,
-			String streetAdress, int country, String zipCode, String city, int occupation, String hobbies,
+			String streetAdress, String country, String zipCode, String city, String occupation, String hobbies,
 			String website) {
 		Actions actions = new Actions(driver);
 		insurantElements.fieldFirstName(driver).sendKeys(firstName);
-		;
 		insurantElements.fieldLastName(driver).sendKeys(lastName);
 		insurantElements.fieldDateBirth(driver).sendKeys(dateBirth);
 		actions.moveToElement(insurantElements.fieldGender(driver, gender)).click().build().perform();
@@ -38,6 +37,7 @@ public class PoInsurencePage extends DriverConfigurantion {
 	}
 
 	public void nextTab() {
+		wait(2);
 		insurantElements.fieldNextTab(driver).click();
 	}
 

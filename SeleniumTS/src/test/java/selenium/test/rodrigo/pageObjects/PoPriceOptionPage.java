@@ -22,6 +22,7 @@ public class PoPriceOptionPage extends DriverConfigurantion {
 	}
 
 	public void nextTab() {
+		wait(2);
 		priceElements.fieldNextTab(driver).click();
 	}
 

@@ -17,6 +17,16 @@ public class DriverConfigurantion {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(url);
 	}
+	
+	public static void wait(int seconds) {
+		System.out.println("Waiting for "+seconds+" seconds");
+		try {
+			Thread.sleep(seconds * 1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 	public static void driver(String string) {
 	}

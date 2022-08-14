@@ -6,12 +6,12 @@ import org.openqa.selenium.WebElement;
 
 public class VehicleElements {
 
-	public WebElement fieldMake(WebDriver driver, int i) {
-		return driver.findElement(By.cssSelector("#make>option:nth-child(" + i + ")"));
+	public WebElement fieldMake(WebDriver driver, String make) {
+		return driver.findElement(By.cssSelector("select#make> option[value = \"" + make + "\"]"));
 	}
 
-	public WebElement fieldModel(WebDriver driver, int i) {
-		return driver.findElement(By.cssSelector("#model>option:nth-child(" + i + ")"));
+	public WebElement fieldModel(WebDriver driver, String model) {
+		return driver.findElement(By.cssSelector("select#model> option[value = \"" + model + "\"]"));
 	}
 
 	public WebElement fieldCylinderCapacity(WebDriver driver) {
@@ -26,20 +26,21 @@ public class VehicleElements {
 		return driver.findElement(By.id("dateofmanufacture"));
 	}
 
-	public WebElement fieldNumberSeats(WebDriver driver, int i) {
-		return driver.findElement(By.cssSelector("#numberofseats>option:nth-child(" + i + ")"));
+	public WebElement fieldNumberSeats(WebDriver driver, String numberSeats) {
+		return driver.findElement(By.cssSelector("select#numberofseats> option[value = \"" + numberSeats + "\"]"));
 	}
 
 	public WebElement fieldRightHandDrive(WebDriver driver, String rightHandDrive) {
-		return driver.findElement(By.id(rightHandDrive));
+		return driver.findElement(By.cssSelector("input[id*='righthanddrive'][value= \"" + rightHandDrive + "\"]"));
 	}
 
-	public WebElement fieldNumberOfSeatsMotorcycle(WebDriver driver, int i) {
-		return driver.findElement(By.cssSelector("#numberofseatsmotorcycle>option:nth-child(" + i + ")"));
+	public WebElement fieldNumberOfSeatsMotorcycle(WebDriver driver, String numberSeatsMotorcycle) {
+		return driver.findElement(
+				By.cssSelector("select#numberofseatsmotorcycle> option[value =\"" + numberSeatsMotorcycle + "\"]"));
 	}
 
-	public WebElement fieldFuelType(WebDriver driver, int i) {
-		return driver.findElement(By.cssSelector("#fuel>option:nth-child(" + i + ")"));
+	public WebElement fieldFuelType(WebDriver driver, String fuelType) {
+		return driver.findElement(By.cssSelector("select#fuel> option[value = \"" + fuelType + "\"]"));
 	}
 
 	public WebElement fieldPayload(WebDriver driver) {

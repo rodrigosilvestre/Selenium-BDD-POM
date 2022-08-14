@@ -29,6 +29,7 @@ public class PoProductPage extends DriverConfigurantion {
 	}
 
 	public void nextTab() {
+		wait(2);
 		productElements.fieldNextTab(driver).click();
 	}
 }
