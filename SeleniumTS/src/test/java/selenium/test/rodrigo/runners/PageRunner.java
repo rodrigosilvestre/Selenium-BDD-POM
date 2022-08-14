@@ -8,7 +8,6 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-		tags = "@test",
 		features = "src/test/resources/features/AutomobileInsurance.feature",
 		glue = "selenium.test.rodrigo.stepdefs",
 		plugin = {"summary", "pretty", "html:target/cucumber-reports.html", //Creating Report File .html

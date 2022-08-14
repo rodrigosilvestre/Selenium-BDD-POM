@@ -29,7 +29,17 @@ public class PoSendQuotePage extends DriverConfigurantion {
 		sendQouteElements.fieldSendQuote(driver).click();
 		WebElement sucessMessage = sendQouteElements.verifySucessMessage(driver);
 		assertEquals("Sending e-mail success!", sucessMessage.getText());
-
+		wait(10);
+		driver.close();
 	}
-
+	
+	public void wait(int seconds) {
+		System.out.println("Waiting for 10 seconds");
+		try {
+			Thread.sleep(seconds * 1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 }
