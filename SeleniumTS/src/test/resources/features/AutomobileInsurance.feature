@@ -59,7 +59,7 @@ Feature: Tests of Automobile Insurance functionality
 		When select the <Price Option>
     Then check that all price information has been filled in
     And proceed to the Send Quote tab
-    Examples:
+   Examples:
     |Price Option  |
     |selectultimate|
     
