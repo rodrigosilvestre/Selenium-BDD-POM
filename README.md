@@ -16,7 +16,7 @@ This project aims to automate the Tricentis Vehicle Insurance Application page, 
 - Generate .html report on all test results performed during the task
 
 
-## Screenshot from the .Feature write in Cucumber
+## Screenshot from the .Feature written in Cucumber
 
 ![App Screenshot](https://user-images.githubusercontent.com/58074589/184560928-56fae155-a7ac-4b3a-ab3b-43aad16137a3.png)
 
