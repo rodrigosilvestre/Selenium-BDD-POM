@@ -18,7 +18,8 @@ This project aims to automate the Tricentis Vehicle Insurance Application page, 
 
 ## Screenshot from the .Feature write in Cucumber
 
-![App Screenshot](https://via.placeholder.com/468x300?text=Apply+Screenshot+Here)
+![App Screenshot](https://user-images.githubusercontent.com/58074589/184560928-56fae155-a7ac-4b3a-ab3b-43aad16137a3.png)
+
 
 ## Running Project
 
