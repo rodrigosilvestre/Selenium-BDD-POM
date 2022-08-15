@@ -45,9 +45,6 @@ or
 
 **Cucumber**
 
-**Selenium**
-
-
 ## Authors
 
 - [@rodrigossilvestre](https://github.com/rodrigosilvestre)
